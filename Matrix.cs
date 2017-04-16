@@ -63,15 +63,15 @@ namespace Matrix
 
                             Console.SetCursorPosition((int)position, Console.CursorTop);
                             Console.WriteLine(matrixChar[new Random().Next(0, 36)]);
-                            Thread.Sleep(5);
+                            Thread.Sleep(2);
 
-                            if (Console.CursorTop == Console.WindowHeight - 2)
+                            if (Console.CursorTop == Console.WindowHeight - 1)
                             {
-                                for (int t = Console.WindowHeight - stringLength - 3; t < Console.WindowHeight; t++)
+                                for (int t = Console.WindowHeight - stringLength-2; t < Console.WindowHeight; t++)
                                 {
                                     Console.SetCursorPosition((int)position, t);
                                     Console.WriteLine(" ");
-                                    Thread.Sleep(5);
+                                    Thread.Sleep(2);
                                 }
                             }
                         }
