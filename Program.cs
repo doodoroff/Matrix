@@ -11,8 +11,7 @@ namespace Matrix
  
         static void Main()
         {
-            new Matrix().MatrixStart();
-            Console.ReadKey();
+            new MatrixDirector().MatrixStart();
         }
     }
 }
